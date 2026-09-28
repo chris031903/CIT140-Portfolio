@@ -1,0 +1,38 @@
+“The command was in a format MR-17 accepts, and it came through an internal interface. The source label says legacy_sync.exe. I haven’t verified who owns that service or why it’s running. It gives us something to follow up on, but I can’t tell you it explains the whole incident.”
+
+How can I use this information? 
+
+
+The command was validly formatted.
+The source label is legacy_sync.exe.
+The telemetry does not identify the service owner or prove the broader cause.
+
+
+
+
+Nia reports that MR-17 behaved normally before the incident.
+Elias says a controlled restart may clear the active state.
+Mara confirms production has paused in the affected QA cell.
+
+Visible Failure
+Test began at 2:13:07
+Repeat cycle begins
+Stop request returned: ACTIVE_INSTRUCTION_PENDING
+Nia reports that MR-17 behaved normally before the incident.
+Elias says a controlled restart may clear the active state.
+Mara confirms production has paused in the affected QA cell
+
+Verified Facts
+ The robot is not scheduled CURRENTLY. (Nia)
+
+Within the document it states that MR-17 is not assigned to do anything. 
+
+Mara states that production is paused on the QA cell.
+
+Assumptions and Open Questions
+Nia reports that  MR-17 was functionally operable, what happened between the time of the error and proper function? (Question)
+
+2. I would need to see the logs and come to the conclusion that MR-17 was working beforehand. (Assumption)
+
+
+
