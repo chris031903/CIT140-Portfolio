@@ -1,0 +1,129 @@
+{
+  "format": "command-nexus-weekly-report",
+  "schemaVersion": 1,
+  "courseId": "CIT140",
+  "week": 2,
+  "assignmentId": "CIT140-W02-BUSINESS-CASE",
+  "artifactType": "business-case-recommendation",
+  "caseId": "meridian-forge",
+  "reportId": "eab5505d-37b0-442b-8b21-b4bbbd1318db",
+  "revision": 2410,
+  "createdAt": "2026-09-29T02:30:06.988Z",
+  "exportedAt": "2026-09-29T06:56:10.167Z",
+  "learnerLabel": "robot fix",
+  "contentStatus": "complete-fields",
+  "sections": [
+    {
+      "id": "project",
+      "title": "Proposed project",
+      "value": "I recommend evaluating the robot's command history and decide whether or not going through the trouble of rebooting the robot is worth the time. "
+    },
+    {
+      "id": "need",
+      "title": "Business need",
+      "value": "We need to improve function overall. Expand upon issues to create more work to be done. Maximize the things we get done until we can get as close to perfect as possible. "
+    },
+    {
+      "id": "value",
+      "title": "Expected value and beneficiaries",
+      "value": " 01: The company itself could fix the robot, find the owner, and reverse engineer it, turning it into a tool they could sell, or patent.  If we pour time into the robot, we could change the way that we operate. "
+    },
+    {
+      "id": "scopeIn",
+      "title": "Included work",
+      "value": "We have the ownership. Scheduling, and our checklist according to W02-S03"
+    },
+    {
+      "id": "scopeOut",
+      "title": "Excluded work",
+      "value": "Repair of the robot, only a look at what we could see about it."
+    },
+    {
+      "id": "technical",
+      "title": "Technical feasibility",
+      "value": "Tools and read only exports support the review via the read only copies and exports.  The delayed access condition is a problem"
+    },
+    {
+      "id": "operational",
+      "title": "Operational feasibility",
+      "value": "QA window is necessary, so they must make sure that QA is always available. "
+    },
+    {
+      "id": "resources",
+      "title": "Cost and resource feasibility",
+      "value": "Equipment, tools, overtime, and assessment costs are excluded according to w02-S05"
+    },
+    {
+      "id": "schedule",
+      "title": "Schedule feasibility",
+      "value": "Read-only exports cause problems/holdup. Engineering takes long to start, QA needs 2 days entirely. The time elapsed between individuals is where the 48 hours comes from so there must be calculations"
+    },
+    {
+      "id": "constraints",
+      "title": "Known constraints",
+      "value": "Budget limits. Avoid the 3000 limit. Schedule limit. , 10 days isn't a lot. "
+    },
+    {
+      "id": "risks",
+      "title": "Risks and assumptions",
+      "value": "No availability from the QA's. Find out an alternative to a QA if they are unsure. "
+    },
+    {
+      "id": "success",
+      "title": "Success measures and evidence",
+      "value": "They will go by the amount of authorization and and archive of tests. "
+    },
+    {
+      "id": "recommendation",
+      "title": "Recommendation",
+      "value": "proceed"
+    },
+    {
+      "id": "rationale",
+      "title": "Rationale and conditions",
+      "value": "W02-S02 shows that we can do it with our timeframe. W02-S05 provides us with the budget.\nWork is limited, so I think that as long as we keep it solid, we can finish. "
+    },
+    {
+      "id": "nextStep",
+      "title": "Next authorization or information step",
+      "value": "Elias should have the department heads move forward to confirm availability. The sponsor will auth, or it wont. "
+    }
+  ],
+  "sources": [
+    {
+      "id": "W02-S01",
+      "title": "Request for a bounded review",
+      "locator": "Week 2 decision packet · W02-S01"
+    },
+    {
+      "id": "W02-S02",
+      "title": "Evidence-retrieval workload",
+      "locator": "Week 2 decision packet · W02-S02"
+    },
+    {
+      "id": "W02-S03",
+      "title": "Proposed scope and current workflow",
+      "locator": "Week 2 decision packet · W02-S03"
+    },
+    {
+      "id": "W02-S04",
+      "title": "Capacity, access and operating limits",
+      "locator": "Week 2 decision packet · W02-S04"
+    },
+    {
+      "id": "W02-S05",
+      "title": "Estimate and success-measure sheet",
+      "locator": "Week 2 decision packet · W02-S05"
+    }
+  ],
+  "attachments": [
+    {
+      "id": "repository-check",
+      "filename": "Week02_Repository_Check.png",
+      "kind": "supporting-evidence",
+      "caption": "Required Week 2 repository screenshot; supply the actual file separately. This reference does not verify an upload.",
+      "sourceIds": []
+    }
+  ],
+  "relatedReportIds": []
+}
