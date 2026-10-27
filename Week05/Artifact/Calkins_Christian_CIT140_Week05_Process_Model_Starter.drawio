@@ -1,0 +1,284 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="Current Process" id="w05-process">
+    <mxGraphModel dx="1542" dy="859" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=24;fontStyle=1;fontColor=#183c43;align=left;" value="CIT 140 · Week 5 | Current Appointment Process" vertex="1">
+          <mxGeometry height="40" width="1080" x="40" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="instructions" parent="1" style="text;html=1;fontSize=13;align=left;whiteSpace=wrap;" value="Replace this line with your process start and end. Add supported steps and decisions in the responsible role&#39;s lane. Label decision branches and source IDs." vertex="1">
+          <mxGeometry height="45" width="1080" x="40" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="visitor" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#60a917;strokeColor=#2D7600;fontSize=15;fontStyle=1;fontColor=#ffffff;" value="Visitor" vertex="1">
+          <mxGeometry height="100" width="1080" x="40" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-1" parent="visitor" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" value="Request of an&lt;br&gt;Appointment&lt;br&gt;(W05-S01)" vertex="1">
+          <mxGeometry height="65" width="150" x="150" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-2" parent="visitor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=inherit;fillStyle=solid;" value="Contact visitor for clarification&amp;nbsp;&lt;br&gt;(W05-S01)" vertex="1">
+          <mxGeometry height="45" width="130" x="440" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-3" parent="visitor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;gradientColor=default;" value="Receive Booking Info&lt;br&gt;(W05-S01/W05-S04)" vertex="1">
+          <mxGeometry height="45" width="130" x="700" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-19" edge="1" parent="visitor" source="a8g5ZUFeIaOb3Xo7IKqY-1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;defaultLabelBackgroundColor=page;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#a20025;strokeColor=light-dark(#6F0000,#FF0B9D);" target="a8g5ZUFeIaOb3Xo7IKqY-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="80" as="sourcePoint" />
+            <mxPoint x="400" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="scheduling" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#60a917;strokeColor=#2D7600;fontSize=15;fontStyle=1;fontColor=#ffffff;" value="Scheduling" vertex="1">
+          <mxGeometry height="100" width="1080" x="40" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-22" edge="1" parent="scheduling" source="l-decision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="-30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-5" parent="scheduling" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Record requested slot &amp;amp; support preferences (W05-S01)" vertex="1">
+          <mxGeometry height="45" width="130" x="250" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-25" parent="scheduling" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Request clinical readiness decision&#xa;(W05-S01)" vertex="1">
+          <mxGeometry height="45" width="130" x="660" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-32" edge="1" parent="scheduling" source="a8g5ZUFeIaOb3Xo7IKqY-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="l-decision" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="273" as="sourcePoint" />
+            <mxPoint x="800" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l-decision" parent="scheduling" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7ee;strokeColor=#95694b;" value="Details Complete?&#xa;(W05-S01)" vertex="1">
+          <mxGeometry height="82.5" width="130" x="440" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="clinical" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#60a917;strokeColor=#2D7600;fontSize=15;fontStyle=1;fontColor=#ffffff;" value="Clinical&lt;br&gt;Operations" vertex="1">
+          <mxGeometry height="100" width="1080" x="40" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-6" parent="clinical" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;align=center;" value="Receive scheduling request &amp; check availability&#xa;(W05-S02)" vertex="1">
+          <mxGeometry height="65" width="195" x="225" y="7.5" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-28" parent="clinical" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7ee;strokeColor=#95694b;" value="Room &amp; clinician available?&#xa;(W05-S02)" vertex="1">
+          <mxGeometry height="75" width="140" x="450" y="7.5" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-33" parent="clinical" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Retain held status &amp; review capacity&#xa;(W05-S02)" vertex="1">
+          <mxGeometry height="45" width="130" x="670" y="7.5" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-34" parent="clinical" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Record readiness status&#xa;(W05-S02)" vertex="1">
+          <mxGeometry height="45" width="130" x="670" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-35" edge="1" parent="clinical" source="a8g5ZUFeIaOb3Xo7IKqY-28" style="endArrow=block;html=1;strokeColor=#5a7c7d;fontColor=light-dark(#000000,#00FF00);" target="a8g5ZUFeIaOb3Xo7IKqY-33" value="YES">
+          <mxGeometry relative="1" x="0.4137" y="-8" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="600" y="20" />
+              <mxPoint x="630" y="20" />
+            </Array>
+            <mxPoint x="610" y="30" as="sourcePoint" />
+            <mxPoint x="670" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-36" edge="1" parent="clinical" source="a8g5ZUFeIaOb3Xo7IKqY-28" style="endArrow=block;html=1;strokeColor=#5a7c7d;fontColor=light-dark(#000000,#FF0000);exitX=0.846;exitY=0.679;exitDx=0;exitDy=0;exitPerimeter=0;" target="a8g5ZUFeIaOb3Xo7IKqY-34" value="NO">
+          <mxGeometry relative="1" x="0.1162" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="630" y="60" />
+            </Array>
+            <mxPoint x="590" y="60" as="sourcePoint" />
+            <mxPoint x="660" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="intake" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#60a917;strokeColor=#2D7600;fontSize=15;fontStyle=1;fontColor=#ffffff;" value="Intake" vertex="1">
+          <mxGeometry height="100" width="1080" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-7" parent="intake" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Visitor arrives &amp; locate appointment&#xa;(W05-S03)" vertex="1">
+          <mxGeometry height="65" width="180" x="200" y="7.5" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-29" parent="intake" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7ee;strokeColor=#95694b;" value="Readiness status in queue?&lt;br&gt;(W05-S03)" vertex="1">
+          <mxGeometry height="82.5" width="170" x="430" y="2.5" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-44" parent="intake" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Open exception review&#xa;(W05-S03/W05-S04)" vertex="1">
+          <mxGeometry height="52.5" width="220" x="670" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-45" parent="intake" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Confirm support arrangements &amp; handover&#xa;(W05-S03)" vertex="1">
+          <mxGeometry height="45" width="270" x="670" y="52.5" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-51" edge="1" parent="intake" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="590" y="78" as="sourcePoint" />
+            <mxPoint x="670" y="72" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-54" connectable="0" parent="a8g5ZUFeIaOb3Xo7IKqY-51" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelBackgroundColor,defaultLabelBackgroundColor,labelPadding;defaultLabelBackgroundColor=page;fontColor=#1A00FF;" value="&lt;b&gt;READY&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1156" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="handoff" parent="1" style="swimlane;horizontal=0;startSize=145;html=1;fillColor=#60a917;strokeColor=#2D7600;fontSize=15;fontStyle=1;fontColor=#ffffff;" value="Next staff team" vertex="1">
+          <mxGeometry height="120" width="1080" x="40" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-26" parent="handoff" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff7ee;strokeColor=#95694b;" value="&lt;b&gt;Receive visitor with confirmed arrangements&amp;nbsp;&lt;br&gt;(W05-S03)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="75" width="300" x="390" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="text;html=1;fontSize=13;align=left;" value="Symbol key (copy these shapes into your lanes; they are not case steps)" vertex="1">
+          <mxGeometry height="30" width="1080" x="40" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="l-arrow" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#5a7c7d;" value="Labeled sequence">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="610" y="732" as="sourcePoint" />
+            <mxPoint x="810" y="732" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l-activity" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#edf5f2;strokeColor=#5a7c7d;" value="Activity" vertex="1">
+          <mxGeometry height="45" width="130" x="380" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-14" edge="1" parent="1" source="a8g5ZUFeIaOb3Xo7IKqY-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="a8g5ZUFeIaOb3Xo7IKqY-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-21" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;defaultLabelBackgroundColor=page;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#a20025;strokeColor=light-dark(#6F0000,#FF0B9D);" value="&lt;b&gt;VISITOR ACTION&lt;/b&gt;">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="850" y="732" as="sourcePoint" />
+            <mxPoint x="990" y="732" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-23" edge="1" parent="1" source="l-decision" style="endArrow=block;html=1;strokeColor=#5a7c7d;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=light-dark(#000000,#FF0000);" target="a8g5ZUFeIaOb3Xo7IKqY-2" value="NO">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="530" y="250" as="sourcePoint" />
+            <mxPoint x="730" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-24" edge="1" parent="1" source="l-decision" style="endArrow=block;html=1;strokeColor=#5a7c7d;exitX=1;exitY=1;exitDx=0;exitDy=0;fontColor=light-dark(#000000,#00FF00);" value="YES">
+          <mxGeometry relative="1" x="-0.4033" y="-6" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="600" y="280" />
+            </Array>
+            <mxPoint x="660" y="331" as="sourcePoint" />
+            <mxPoint x="710" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l-start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff7ee;strokeColor=#95694b;" value="Start / end" vertex="1">
+          <mxGeometry height="45" width="130" x="250" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-27" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7ee;strokeColor=#95694b;" value="Details Gathered?" vertex="1">
+          <mxGeometry height="65" width="100" x="540" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-30" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#5a7c7d;fontColor=light-dark(#000000,#00FF00);" value="YES">
+          <mxGeometry relative="1" x="0.1902" y="-8" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="905" y="790" />
+              <mxPoint x="900" y="780" />
+            </Array>
+            <mxPoint x="880" y="790" as="sourcePoint" />
+            <mxPoint x="940" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-31" edge="1" parent="1" style="endArrow=block;html=1;strokeColor=#5a7c7d;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=light-dark(#000000,#FF0000);" value="NO">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="690" y="780" />
+            </Array>
+            <mxPoint x="650" y="780" as="sourcePoint" />
+            <mxPoint x="720" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-37" edge="1" parent="1" source="a8g5ZUFeIaOb3Xo7IKqY-33" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;defaultLabelBackgroundColor=page;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#0050ef;strokeColor=#001DBC;" target="a8g5ZUFeIaOb3Xo7IKqY-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="350" />
+            </Array>
+            <mxPoint x="560" y="550" as="sourcePoint" />
+            <mxPoint x="610" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-42" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;defaultLabelBackgroundColor=page;fillColor=#0050ef;strokeColor=#001DBC;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="790" />
+            </Array>
+            <mxPoint x="750" y="790" as="sourcePoint" />
+            <mxPoint x="860" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-43" connectable="0" parent="a8g5ZUFeIaOb3Xo7IKqY-42" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="&lt;b&gt;LOOP&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.04" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-46" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" target="a8g5ZUFeIaOb3Xo7IKqY-44" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="630" y="480" as="sourcePoint" />
+            <mxPoint x="680" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-47" connectable="0" parent="a8g5ZUFeIaOb3Xo7IKqY-46" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelBackgroundColor,defaultLabelBackgroundColor,labelPadding;defaultLabelBackgroundColor=page;fontColor=#FF0000;" value="&lt;b&gt;HELD&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0732" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-48" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1010" y="756" as="sourcePoint" />
+            <mxPoint x="1090" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-49" connectable="0" parent="a8g5ZUFeIaOb3Xo7IKqY-48" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelBackgroundColor,defaultLabelBackgroundColor,labelPadding;defaultLabelBackgroundColor=page;fontColor=#FF0000;" value="&lt;b&gt;HELD&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0732" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-55" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1020" y="716" as="sourcePoint" />
+            <mxPoint x="1100" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-56" connectable="0" parent="a8g5ZUFeIaOb3Xo7IKqY-55" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelBackgroundColor,defaultLabelBackgroundColor,labelPadding;defaultLabelBackgroundColor=page;fontColor=#1A00FF;" value="&lt;b&gt;READY&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1156" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-57" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="a8g5ZUFeIaOb3Xo7IKqY-26" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="820" y="540" as="sourcePoint" />
+            <mxPoint x="890" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a8g5ZUFeIaOb3Xo7IKqY-58" connectable="0" parent="a8g5ZUFeIaOb3Xo7IKqY-57" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontSize,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelBackgroundColor,defaultLabelBackgroundColor,labelPadding;defaultLabelBackgroundColor=page;fontColor=#1A00FF;" value="&lt;b&gt;READY&lt;/b&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1156" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Scope and Findings" id="w05-findings">
+    <mxGraphModel dx="1542" dy="859" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=24;fontStyle=1;align=left;" value="Week 5 | Scope and Findings" vertex="1">
+          <mxGeometry height="40" width="1070" x="45" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="scope" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=15;" value="&lt;b&gt;1 · Process scope&lt;/b&gt;&lt;br&gt;Christian Calkins&lt;br&gt;&lt;p style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); margin: 0px; font-family: system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; font-size: 12px;&quot;&gt;&lt;span style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); font-weight: bolder;&quot;&gt;Process Start:&lt;/span&gt; The process begins when a visitor submits an appointment request containing their preferences and required accommodation details (W05-S01).&lt;/p&gt;&lt;p class=&quot;mt-1&quot; style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); margin: 0.25rem 0px 0px; font-family: system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; font-size: 12px;&quot;&gt;&lt;span style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); font-weight: bolder;&quot;&gt;Process End:&lt;/span&gt; The process ends when the next staff team receives the visitor at arrival with all necessary clinical and accommodation arrangements verified (W05-S03).&lt;/p&gt;" vertex="1">
+          <mxGeometry height="110" width="1070" x="45" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="walkthrough" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=15;" value="&lt;b&gt;2 · Check the two paths&lt;/b&gt;&lt;br&gt;&lt;p style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); margin: 0px; font-family: system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; font-size: 12px;&quot;&gt;&lt;span style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); font-weight: bolder;&quot;&gt;Incident Sequence:&lt;/span&gt; Request received → confirmation issued to visitor → visitor arrives → status checked as HELD → exception review triggered (W05-S04).&lt;/p&gt;&lt;p class=&quot;mt-1&quot; style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); margin: 0.25rem 0px 0px; font-family: system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; font-size: 12px;&quot;&gt;&lt;span style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); font-weight: bolder;&quot;&gt;Root Cause Disconnect:&lt;/span&gt; A confirmation message was dispatched to the visitor before Clinical Operations completed their evaluation of room and clinician availability (W05-S01, W05-S04).&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="1070" x="45" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="sources" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=15;" value="&lt;b&gt;3 · Evidence and model review&lt;/b&gt;&lt;br&gt;&lt;ul class=&quot;list-disc list-inside space-y-1&quot; style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); list-style: inside disc; margin: 0px; padding: 0px; font-family: system-ui, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; font-size: 12px;&quot;&gt;&lt;li style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235);&quot;&gt;&lt;span style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); font-weight: bolder;&quot;&gt;Visitor:&lt;/span&gt; Initiates appointment requests and receives booking confirmation details (W05-S01).&lt;/li&gt;&lt;li style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-space-y-reverse: 0; margin-top: 4px; margin-bottom: 0px;&quot;&gt;&lt;span style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); font-weight: bolder;&quot;&gt;Scheduling (Mateo Silva):&lt;/span&gt; Logs request details, verifies request completeness, issues booking messages, and routes requests for clinical evaluation (W05-S01).&lt;/li&gt;&lt;li style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-space-y-reverse: 0; margin-top: 4px; margin-bottom: 0px;&quot;&gt;&lt;span style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); font-weight: bolder;&quot;&gt;Clinical Operations (Dr. Lena Okafor):&lt;/span&gt; Checks clinician and room availability, setting readiness status to Ready or Retaining Held status (W05-S02).&lt;/li&gt;&lt;li style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-space-y-reverse: 0; margin-top: 4px; margin-bottom: 0px;&quot;&gt;&lt;span style=&quot;--tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: light-dark(#fff, #000000); --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); font-weight: bolder;&quot;&gt;Intake (Dana Ruiz):&lt;/span&gt; Reads queue status upon visitor arrival, completing handovers for Ready cases or escalating Held cases to exception review (W05-S03).&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="140" width="1070" x="40" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="reflection" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=15;" value="&lt;b&gt;4 · Learning reflection (reuse your Discord paragraph)&lt;/b&gt;&lt;br&gt;As I modeled the process, I found that the information that we need to gather came to me in a way that was easy to understand. I found that in W05-S04 there was a lack of communication that resulted in a lapse of information. As I completed the assignment, I thought it was way more engaging than the Week 04 assignment because it involved drawing up the path." vertex="1">
+          <mxGeometry height="140" width="1070" x="40" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="evidence" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=top;spacing=12;fontSize=14;" value="&lt;b&gt;5 · Portfolio evidence&lt;/b&gt;&lt;br&gt;[Editable model filename and Week05/Evidence/Week05_Discord_Post.png or .jpg. If Discord is unavailable, identify the equivalent reflection used here.]&lt;br&gt;Save the .drawio file; export both pages as one PDF; check readability; commit and push." vertex="1">
+          <mxGeometry height="105" width="1070" x="45" y="680" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
